@@ -4,7 +4,7 @@ using namespace std;
 // array of integers to hold values
 int arr[20];             
 int cmp_count = 0;         // Number of comparasion
-int mov_count = 0;         // Number of data movement
+int mov_count = 0;         // Number of data movementt
 int n; 
 
 void input() {
