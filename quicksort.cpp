@@ -73,7 +73,24 @@ void q_short(int low, int high)
 			cmp_count++;
 		}
 		cmp_count++;
+		                      // Langkah 9
+		if (i < j) 
+		{
+			// swap the element at index i whit the element at index j 
+			swap(i, j);
+			mov_count++;
+		}
 
 	}
+	//j now containt the index of the last element in the sorted list
+	if (low < j) 
+	{
+		//move the pivot to its correct position in the list
+		swap(low, j);
+		mov_count++;
+	}
+	//short the list on the left of pivot using quick short
+	q_short(low, j - 1);           // Langkah 12
+
 
 }
